@@ -1,0 +1,33 @@
+
+.body {
+    font-family: "Send Flowers", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color:rgb(62, 123, 235);
+}
+
+.container {
+    display: grid;
+    margin: 0;
+    width: 3000px;
+    height: 3000px;
+    background-color: rgb(62, 123, 235);
+    grid-template-columns: repeat(10, 300px);
+    grid-template-rows: repeat(20, 150px);
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Align text horizontally center */
+    align-items: center; /* Align items vertically center */
+    text-align: center; /* Align text within flex items center */
+    margin: 0;
+    grid-row: 1/2 ;
+    grid-column: 3/6;
+    height: 150px;
+    font-size: 40px;
+    color: white; 
+    font-family: "Send Flowers", cursive;
+}
