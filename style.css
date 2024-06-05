@@ -31,3 +31,37 @@
     color: white; 
     font-family: "Send Flowers", cursive;
 }
+
+.picture {
+    display: flex;
+    justify-content: center; /* Align text horizontally center */
+    align-items: center; /* Align items vertically center */
+    text-align: center; /* Align text within flex items center */
+    margin: 0;
+    grid-row: 2/ 7;
+    grid-column: 1/5;
+    font-size: 40px;
+    color: white; 
+    font-family: "Send Flowers", cursive;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 150px);
+    background-image: url(./rightlookupwardsstanding.jpg);
+    background-image: center;
+    background-repeat: no-repeat;
+}
+
+#button {
+    display: flex;
+    justify-content: center; /* Align text horizontally center */
+    align-items: center; /* Align items vertically center */
+    text-align: center; /* Align text within flex items center */
+    margin: 0;
+    grid-row: 7/ 8;
+    grid-column: 1/2;
+    font-size: 50px;
+    background-color: black;
+    color: pink; 
+    font-family: "Send Flowers", cursive;
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(1, 150px);
+}
