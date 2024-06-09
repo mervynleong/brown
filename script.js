@@ -46,6 +46,9 @@ function handleClick() {
                             case 12:
                 handleTwelvethClick();
                 break;
+                case 13:
+                    restart();
+                    break;
                                                                 
 
         // Add more cases for additional click counts if needed
@@ -122,14 +125,18 @@ function handleEleventhClick() {
 function handleTwelvethClick() {
     console.log("Twelveth click event");
     replaceContent12();
-    clickCount =0;
-        let c = document.querySelector(".picture");
-        c.style.backgroundImage = 'url("./rightlookupwardsstanding.jpg")';
+}
 
-       //reseting of picture
-        c.style.backgroundSize = "contain";
-        c.style.backgroundPosition = "center";
+function restart () {
+    clickCount=0;
+    let c = document.querySelector(".picture");
+    c.style.backgroundImage = 'url("./rightlookupwardsstanding.jpg")';
 
+   //reseting of picture
+    c.style.backgroundSize = "contain";
+    c.style.backgroundPosition = "center";
+    let e= document.querySelector(".words");
+    e.innerText ="Dear Brownie";
 }
 
 
@@ -139,10 +146,11 @@ function handleTwelvethClick() {
     function replaceContent() {
         let b = document.querySelector(".picture");
             b.style.backgroundImage = 'url("./rightlookupwardstoyeobo.jpg")';
-
             // Optionally, you can also set other background properties like size and position
             b.style.backgroundSize = "contain";
             b.style.backgroundPosition = "center";
+            let d= document.querySelector(".words");
+            d.innerText ="We hope you are well.";
     }
 
     function replaceContent2 () {
@@ -152,6 +160,8 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="We are doing fine here.";
     }
 
     function replaceContent3 () {
@@ -161,6 +171,8 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="We hope there are plenty of treats for you in doggo heaven.";
     }
 
         function replaceContent4 () {
@@ -170,6 +182,8 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="We hope that you have made friends there.";
     }
 
     function replaceContent5 () {
@@ -179,6 +193,8 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="You are the best companion we have ever had.";
     }
 
     function replaceContent6 () {
@@ -188,6 +204,8 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="I hope you feel the same towards us as well.";
     }
 
     function replaceContent7 () {
@@ -197,6 +215,8 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="We love you with all our heart.";
     }
 
     function replaceContent8 () {
@@ -206,6 +226,8 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="You gave us very fond memories.";
     }
 
     function replaceContent9 () {
@@ -215,6 +237,8 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="We will never forget you.";
     }
 
     function replaceContent10 () {
@@ -224,6 +248,8 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="Thank you for all the fun and joy we had together.";
     }
 
     function replaceContent11 () {
@@ -233,6 +259,8 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="We will never forget you.";
     }
 
     function replaceContent12 () {
@@ -242,16 +270,15 @@ function handleTwelvethClick() {
         // Optionally, you can also set other background properties like size and position
         b.style.backgroundSize = "contain";
         b.style.backgroundPosition = "center";
+        let d= document.querySelector(".words");
+        d.innerText ="We missed you so much. We love you.";
     }
 
-    // Get the video element
-const video = document.getElementById("myVideo");
 const audio = document.getElementById("myAudio");
 
-window.onload = function () {
+
 // You can control the video using JavaScript, for example:
-video.play(); // Play the video
 audio.play();
 // Call the initializeButton function to set up the initial event listener
 initializeButton();
-}
+
