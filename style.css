@@ -65,3 +65,40 @@
     grid-template-columns: repeat(1, 300px);
     grid-template-rows: repeat(1, 150px);
 }
+
+.words {
+    display:grid;
+    justify-content: center; /* Align text horizontally center */
+    align-items: center; /* Align items vertically center */
+    text-align: center; /* Align text within flex items center */
+    grid-row: 7/ 8;
+    grid-column: 2/5;
+    font-size: 50px;
+    background-color: white;
+    color: rgb(9, 255, 0);   
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(1, 150px);
+}
+
+#myVideo {
+    display: flex;
+    justify-content: center; /* Align text horizontally center */
+    align-items: center; /* Align items vertically center */
+    text-align: center; /* Align text within flex items center */
+    margin: 0;
+    grid-row: 8/ 11;
+    grid-column: 1/5;
+    font-size: 40px;
+    color: white; 
+    font-family: "Send Flowers", cursive;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(4, 150px);
+    height: 500px;
+    width: 700px
+
+}
+
+#myAudio {
+    display: none;
+}
