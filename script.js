@@ -56,11 +56,11 @@ function handleClick() {
             break;
     }
 }
-const audio = document.getElementById("myAudio");
+
 function handleFirstClick() {
     console.log("First click event");
     replaceContent();
-    
+    const audio = document.getElementById("myAudio");
     // You can control the video using JavaScript, for example:
 audio.play();
     
