@@ -56,10 +56,14 @@ function handleClick() {
             break;
     }
 }
-
+const audio = document.getElementById("myAudio");
 function handleFirstClick() {
     console.log("First click event");
     replaceContent();
+    
+    // You can control the video using JavaScript, for example:
+audio.play();
+    
 }
 
 function handleSecondClick() {
@@ -274,11 +278,10 @@ function restart () {
         d.innerText ="We missed you so much. We love you.";
     }
 
-const audio = document.getElementById("myAudio");
 
 
-// You can control the video using JavaScript, for example:
-audio.play();
+
+
 // Call the initializeButton function to set up the initial event listener
 initializeButton();
 
